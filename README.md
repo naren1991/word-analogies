@@ -43,10 +43,10 @@ Consider the following examples:
 ## Methodology for word analogy predictions
 
 * Word analogies can be predicted using **word embeddings**. **Word embeddings** are high dimensional numeric representations of the word according to the context in which it is typically used. 
-* The distance between the emebedding vectors of 2 words are indicative of the difference in typical usage of the words.
+* The distance between the embedding vectors of 2 words are indicative of the difference in typical usage of the words.
 * Analogies based on an example can be predicted using these word embeddings and by calculating the distance/ similarity between 2 words
 * There are several pretrained embedding models available trained on huge corpora. *fastText* has been used in this project
-* Word emebedding models can also be trained over pre-trained models for a specifialized context, but this requires a huge amount of data
+* Word embedding models can also be trained over pre-trained models for a specifialized context, but this requires a huge amount of data
 
 ## Results
 
