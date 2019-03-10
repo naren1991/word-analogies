@@ -44,7 +44,8 @@ Consider the following examples:
 
 * Word analogies can be predicted using **word embeddings**. **Word embeddings** are high dimensional numeric representations of the word according to the context in which it is typically used. 
 * The distance between the embedding vectors of 2 words are indicative of the difference in typical usage of the words.
-* Analogies based on an example can be predicted using these word embeddings and by calculating the distance/ similarity between 2 words
+* Analogies based on an example can be predicted using these word embeddings and by calculating the cosine similarity between words
+* Conceptually, this loosely translates to finding a word, which has a similar distance from the *query* word as the distance between the *example* words. This would mean that the *answer* word has approximately the same level of similarity to the *query* word, as the level of similarity between the *example* words. As these are done on word embeddings which capture of the context of a word's typical usage, this translates to identifying analogies. [In terms of one of the examples quoted above, 'King' is the *query* word, & 'man' and 'woman' are the example words. 'Queen' is the *answer* ]
 * There are several pretrained embedding models available trained on huge corpora. *fastText* has been used in this project
 * Word embedding models can also be trained over pre-trained models for a specifialized context, but this requires a huge amount of data
 
@@ -55,8 +56,8 @@ Consider the following examples:
 ## Further scope
 
 * There various pre-trained embeddings available, with various variants of the each. These can be used in order to improve accuracy, or use a specialized embedding for a specific context. Other embeddings include:
-    ** gLove
-    ** eLMo
+    ** GloVe
+    ** ELMo
     ** word2vec
 
 ## High-level architecture for the system
