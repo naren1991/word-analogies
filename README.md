@@ -1,4 +1,4 @@
-# Word Analogies
+# Word Analogy Predictor
 
 ## Objective
 
