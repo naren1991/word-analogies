@@ -1,5 +1,5 @@
 #Emebdiings
-./embeddings/fasttext/*.vec
+embeddings/fasttext/*.vec
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
